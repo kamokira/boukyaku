@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>復習日結果</title>
+</head>
+<body>
+    <h1>あなたの復習する日付は次の通りです</h1>
+    <ul>
+        {% for date in review_dates %}
+        <li>{{ date }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">戻る</a>
+</body>
+</html>
